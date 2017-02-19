@@ -113,6 +113,39 @@
 		"price" : "15",
 		"user_id": "6",
 		"pic":"../../assets/img/petlovers3.jpg"
+	},
+	{
+		"id": "4",
+		"adress" : "1145 Grove Avenue",
+		"availability": "true",
+		"city": "Los Angeles",
+		"state" : "California",
+		"zipcode" : "92085",
+		"price" : "13",
+		"user_id": "7",
+		"pic":"../../assets/img/petlovers4.jpg"
+	},
+	{
+		"id": "5",
+		"adress" : "2400 Apple Blvd",
+		"availability": "true",
+		"city": "Los Angeles",
+		"state" : "California",
+		"zipcode" : "92085",
+		"price" : "22",
+		"user_id": "8",
+		"pic":"../../assets/img/petlovers5.jpg"
+	},
+	{
+		"id": "6",
+		"adress" : "5000 Smith Street",
+		"availability": "true",
+		"city": "Los Angeles",
+		"state" : "California",
+		"zipcode" : "92085",
+		"price" : "8",
+		"user_id": "9",
+		"pic":"../../assets/img/petlovers6.jpg"
 	}
 ]
 
