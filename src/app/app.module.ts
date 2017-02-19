@@ -17,6 +17,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { AcceptationComponent } from './acceptation/acceptation.component';
 import { RatingComponent } from './rating/rating.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ProfileChoiceComponent } from './profile-choice/profile-choice.component';
 
 const appRoutes: Routes = [
   { path: 'pet-lover-component', component: PetLoverComponent },
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'pet-profile', component: PetProfileComponent },
   { path: 'kennel-profile', component: KennelProfileComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'profile-choice', component: ProfileChoiceComponent },
 ];
 
 export const firebaseConfig = {
@@ -37,7 +39,7 @@ export const firebaseConfig = {
 };
 
 @NgModule({
-  declarations: [AppComponent, PetLoverComponent, LoginComponent, HomeComponent, SignupComponent, PetProfileComponent, KennelProfileComponent, KennelComponent, ReservationComponent, AcceptationComponent, RatingComponent, WelcomeComponent],
+  declarations: [AppComponent, PetLoverComponent, LoginComponent, HomeComponent, SignupComponent, PetProfileComponent, KennelProfileComponent, KennelComponent, ReservationComponent, AcceptationComponent, RatingComponent, WelcomeComponent, ProfileChoiceComponent],
   imports: [
     BrowserModule,
     FormsModule,
