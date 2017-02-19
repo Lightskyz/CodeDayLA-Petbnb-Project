@@ -3,10 +3,12 @@
     <h2 class="title">Pet Lovers</h2>
     <div class="grid">
       <figure class="effect-zoe" *ngFor="let place of places | async">
+        <div *ngFor="let user of users | async">
         <img src="{{ place.pic }}" alt="img25"/>
-        <figcaption>
-          <h2>Creative <span>Zoe</span></h2>
+        <figcaption *ngIf="place.user_id == user.id">
+          <h2>{{ user.firstName }}</h2>
         </figcaption>
+      </div>
       </figure>
     </div>
   </div>

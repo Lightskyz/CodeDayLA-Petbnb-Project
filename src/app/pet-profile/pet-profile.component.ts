@@ -4,16 +4,14 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Component({
   selector: 'app-pet-profile',
   template: `
-  <ul>
-      <li *ngFor="let pet of pets | async">
-        <input type="text" #updatepet [value]="pet.name" />
-        <button (click)="updateItem(pet.$key, updatepet.value)">Update</button>
-        <button (click)="deleteItem(pet.$key)">Delete</button>
-      </li>
-    </ul>
-    <input type="text" #newpet />
-    <button (click)="addItem(newpet.value)">Add</button>
-    <button (click)="deleteEverything()">Delete All</button>
+
+    <input type="text" #newname placeholder="Pet Name"/>
+
+    <input type="text" #newtype placeholder="Type of Pet"/>
+
+    <input type="text" #newnote placeholder="Description of Pet"/>
+
+    <button (click)="addItem(newname.value, newnote.value, newtype.value)" routerLink='/pet-lover-component'>Register your pet</button>
   `,
   styleUrls: ['./pet-profile.component.css', '../../assets/css/bootstrap.min.css', '../../assets/css/material-kit.css', '../../assets/css/demo.css', '../../assets/css/normalize.css', '../../assets/css/set1.css' ]
 })
@@ -23,16 +21,9 @@ export class PetProfileComponent {
   constructor(af: AngularFire) {
     this.pets = af.database.list('/pet');
   }
-  addItem(newName: string) {
-    this.pets.push({ name: newName });
+  addItem(newName: string, newType: string, newNote: string) {
+    this.pets.push({ name: newName, type: newType, description: newNote });
   }
-  updateItem(key: string, newText: string) {
-    this.pets.update(key, { name: newText });
-  }
-  deleteItem(key: string) {
-    this.pets.remove(key);
-  }
-  deleteEverything() {
-    this.pets.remove();
-  }
+
+
 }
