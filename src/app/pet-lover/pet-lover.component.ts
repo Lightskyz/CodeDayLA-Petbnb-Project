@@ -7,9 +7,11 @@ import { AngularFire, FirebaseObjectObservable, FirebaseListObservable } from 'a
   styleUrls: ['./pet-lover.component.css']
 })
 export class PetLoverComponent implements OnInit {
-  items: FirebaseListObservable<any[]>;
+  places: FirebaseListObservable<any[]>;
+  users: FirebaseListObservable<any[]>;
   constructor(af: AngularFire){
-    this.items = af.database.list('/user');
+    this.places = af.database.list('/place');
+    this.users = af.database.list('/user');
   }
   ngOnInit() {
   }

@@ -1,17 +1,10 @@
-<h1>Pet Lovers</h1>
-  <ul>
-    <li *ngFor="let item of items | async">
-      <div class="pet-lover-component">
-        <img src="{{ item.pic }}" alt="profile_pic" />
-         {{ item.age }}
-         {{ item.city }}
-         {{ item.firstName }}
-         {{ item.password }}
-         {{ item.state }}
-         {{ item.username }}
-         {{ item.zipcode }}
-       </div>
+<div class="col-md-4 pet-lover-component" *ngFor="let place of places | async">
+  <!--img src="{{ item.pic }}" alt="profile_pic" /-->
+  <img src="{{ place.pic }}" alt="profile_pic" />
 
-
-    </li>
-  </ul>
+  <p *ngFor="let user of users | async">
+    <span *ngIf="place.user_id == user.id">
+      {{ user.firstName }}
+    </span>
+  </p>
+</div>

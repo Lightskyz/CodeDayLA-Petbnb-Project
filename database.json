@@ -43,7 +43,7 @@
 		"state":"California",
 		"zipcode":"90001",
 		"pic": "https://randomuser.me/api/portraits/men/94.jpg",
-		"pet_id": ""
+		"pet": ""
 	}, {
 		"id": "5",
 		"username": "codedaypetowner50@gmail.com",
@@ -89,7 +89,8 @@
 		"state" : "California",
 		"zipcode" : "92003",
 		"price" : "10",
-		"user_id": "4"
+		"user_id": "4",
+		"pic":"../../assets/img/petlovers1.jpg"
 	},
 	{
 		"id": "2",
@@ -99,7 +100,8 @@
 		"state" : "California",
 		"zipcode" : "92005",
 		"price" : "20",
-		"user_id": "5"
+		"user_id": "5",
+		"pic":"../../assets/img/petlovers2.jpg"
 	},
 	{
 		"id": "3",
@@ -109,7 +111,8 @@
 		"state" : "California",
 		"zipcode" : "92085",
 		"price" : "15",
-		"user_id": "6"
+		"user_id": "6",
+		"pic":"../../assets/img/petlovers3.jpg"
 	}
 ]
 
