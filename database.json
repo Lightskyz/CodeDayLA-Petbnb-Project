@@ -1,13 +1,45 @@
 {
-	"user": [{
-		"name": "Antoine",
-		"age": "22"
+	"user": [
+		{
+		"username": "leila.kim356@gmail.com",
+		"password": "catowner123",
+		"firstName":"Leila",
+		"age":"19",
+		"city":"Los Angeles",
+		"state":"California",
+		"zipcode":"90001"
 	}, {
-		"name": "Erik",
-		"age": "20"
+		"username": "doglover123@hotmail.com",
+		"password": "dogsarecool123",
+		"firstName":"John",
+		"age":"30",
+		"city":"San Francisco",
+		"state":"California",
+		"zipcode":"94110"
 	}, {
-		"name": "Leila",
-		"age": "16",
-		"mlkqsd": "dlj"
-	}]
+		"username": "petowner2017@gmail.com",
+		"password": "ilovecats12",
+		"firstName":"Pam",
+		"age":"33",
+		"city":"Los Angeles",
+		"state":"California",
+		"zipcode":"90001"
+	}, {
+		"username": "ihaveabird40@aol.com",
+		"password": "parakeet101",
+		"firstName":"Bob",
+		"age":"40",
+		"city":"Los Angeles",
+		"state":"California",
+		"zipcode":"90001"
+	}, {
+		"username": "codedaypetowner50@gmail.com",
+		"password": "password123",
+		"firstName":"Jacqueline",
+		"age":"32",
+		"city":"Los Angeles",
+		"state":"California",
+		"zipcode":"90001"
+	}
+]
 }
