@@ -1,0 +1,18 @@
+
+<h1>Pet Lovers</h1>
+  <ul>
+    <li *ngFor="let item of items | async">
+      <div class="app-component">
+        <img src="{{ item.pic }}" alt="profile_pic" />
+         {{ item.age }}
+         {{ item.city }}
+         {{ item.firstName }}
+         {{ item.password }}
+         {{ item.state }}
+         {{ item.username }}
+         {{ item.zipcode }}
+       </div>
+       
+
+    </li>
+  </ul>
