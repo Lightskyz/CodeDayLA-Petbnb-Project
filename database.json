@@ -116,7 +116,7 @@
 	"place": [
 	{
 		"id": "1",
-		"adress" : "1600 Melrose Ave",
+		"address" : "1600 Melrose Ave",
 		"availability": "true",
 		"city": "Los Angeles",
 		"state" : "California",
@@ -127,7 +127,7 @@
 	},
 	{
 		"id": "2",
-		"adress" : "3000 Hollywood Blvd",
+		"address" : "3000 Hollywood Blvd",
 		"availability": "true",
 		"city": "Los Angeles",
 		"state" : "California",
@@ -138,7 +138,7 @@
 	},
 	{
 		"id": "3",
-		"adress" : "2305 Vine Street",
+		"address" : "2305 Vine Street",
 		"availability": "true",
 		"city": "Los Angeles",
 		"state" : "California",
@@ -149,7 +149,7 @@
 	},
 	{
 		"id": "4",
-		"adress" : "1145 Grove Avenue",
+		"address" : "1145 Grove Avenue",
 		"availability": "true",
 		"city": "Los Angeles",
 		"state" : "California",
@@ -160,7 +160,7 @@
 	},
 	{
 		"id": "5",
-		"adress" : "2400 Apple Blvd",
+		"address" : "2400 Apple Blvd",
 		"availability": "true",
 		"city": "Los Angeles",
 		"state" : "California",
@@ -171,7 +171,7 @@
 	},
 	{
 		"id": "6",
-		"adress" : "5000 Smith Street",
+		"address" : "5000 Smith Street",
 		"availability": "true",
 		"city": "Los Angeles",
 		"state" : "California",
