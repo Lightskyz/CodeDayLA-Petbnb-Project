@@ -4,7 +4,7 @@ import { AngularFire, FirebaseObjectObservable, FirebaseListObservable } from 'a
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css' , '../assets/css/bootstrap.min.css', '../assets/css/material-kit.css', '../assets/css/demo.css']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 
