@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AF } from "../providers/af";
 import { Router } from "@angular/router"
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
@@ -10,13 +9,5 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 export class LoginComponent
   {
-  users: FirebaseListObservable<any[]>;
-  constructor(public afService: AF, private router: Router){}
-
-  login() {
-    this.afService.loginWithGoogle().then((data) => {
-      // Send them to the homepage if they are logged in
-      this.router.navigate(['home']);
-    })
-  }
+  constructor(){}
 }

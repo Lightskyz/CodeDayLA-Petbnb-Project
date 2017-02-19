@@ -68,7 +68,7 @@
 		"pet": ""
 	}, {
 		"id": "7",
-		"username": "mom@gmail.com"
+		"username": "mom@gmail.com",
 		"password": "parakeet101",
 		"firstName":"Sam",
 		"age":"40",

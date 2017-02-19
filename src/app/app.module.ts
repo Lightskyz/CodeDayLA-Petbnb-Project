@@ -17,7 +17,6 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { AcceptationComponent } from './acceptation/acceptation.component';
 import { RatingComponent } from './rating/rating.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AF } from "./providers/af";
 
 const appRoutes: Routes = [
   { path: 'pet-lover-component', component: PetLoverComponent },
@@ -49,7 +48,7 @@ export const firebaseConfig = {
     }),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [AF],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
