@@ -4,11 +4,11 @@ import { AngularFire, FirebaseObjectObservable, FirebaseListObservable } from 'a
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css' , '../assets/css/bootstrap.min.css', '../assets/css/material-kit.css', '../assets/css/demo.css']
 })
 export class AppComponent {
-  items: FirebaseListObservable<any[]>;
-  constructor(af: AngularFire){
-    this.items = af.database.list('/user');
+
+  constructor(){
+
   }
 }
