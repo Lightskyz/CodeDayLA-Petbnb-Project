@@ -17,28 +17,6 @@
 		"state":"California",
 		"zipcode":"94110"
 	}, {
-<<<<<<< HEAD
-		"name": "Leila",
-		"age": "16"
-	}],
-
-	"pet": [
-		{
-			"type": "Dog",
-			"name": "Bobby",
-			"description": "Needs to be given food at 2pm"
-		},
-		{	"type": "Cat",
-			"name" : "Tom",
-			"description": "She drops a lot of hair"
-		},
-		{
-			"type": "Dog",
-			"name": "Jeff",
-			"description": "Cannot be around other dogs, fights a lot"
-		}
-	]
-=======
 		"username": "petowner2017@gmail.com",
 		"password": "ilovecats12",
 		"firstName":"Pam",
@@ -63,6 +41,21 @@
 		"state":"California",
 		"zipcode":"90001"
 	}
-]
->>>>>>> def8be7fc5b7ad0004dc86c101afbd6490ce4028
+],
+	"pet": [
+		{
+			"type": "Dog",
+			"name": "Bobby",
+			"description": "Needs to be given food at 2pm"
+		},
+		{	"type": "Cat",
+			"name" : "Tom",
+			"description": "She drops a lot of hair"
+		},
+		{
+			"type": "Dog",
+			"name": "Jeff",
+			"description": "Cannot be around other dogs, fights a lot"
+		}
+	]
 }
