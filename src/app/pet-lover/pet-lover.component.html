@@ -1,21 +1,13 @@
 <div class="container">
-    <div class="section text-center section-landing">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="title">Pet Lovers</h2>
-
-          <div class="col-md-3 pet-lover-component" *ngFor="let place of places | async">
-            <!--img src="{{ item.pic }}" alt="profile_pic" /-->
-            <img src="{{ place.pic }}" alt="profile_pic" class="img_pet_lover"/>
-            <p *ngFor="let user of users | async">
-              <span *ngIf="place.user_id == user.id">
-                {{ user.firstName }}
-              </span>
-            </p>
-
-          </div>
-        </div>
-      </div>
-
+  <div class="section text-center section-landing">
+    <h2 class="title">Pet Lovers</h2>
+    <div class="grid">
+      <figure class="effect-zoe" *ngFor="let place of places | async">
+        <img src="{{ place.pic }}" alt="img25"/>
+        <figcaption>
+          <h2>Creative <span>Zoe</span></h2>
+        </figcaption>
+      </figure>
     </div>
   </div>
+</div>

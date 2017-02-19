@@ -17,6 +17,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { AcceptationComponent } from './acceptation/acceptation.component';
 import { RatingComponent } from './rating/rating.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AF } from "./providers/af";
 
 const appRoutes: Routes = [
   { path: 'pet-lover-component', component: PetLoverComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: '', component: WelcomeComponent },
   { path: 'pet-profile', component: PetProfileComponent },
-  { path: 'kennel-profile', component: KennelProfileComponent }
+  { path: 'kennel-profile', component: KennelProfileComponent },
+  { path: 'home', component: HomeComponent }
 ];
 
 export const firebaseConfig = {
@@ -47,7 +49,7 @@ export const firebaseConfig = {
     }),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AF],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,6 +2,18 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <h2 class="text-center title">Signup</h2>
+      <div class="col-sm-3">
+        <div class="form-group label-floating">
+          <label class="control-label">With Floating Label</label>
+          <input type="email" class="form-control">
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group label-floating">
+          <label class="control-label">With Floating Label</label>
+          <input type="email" class="form-control">
+        </div>
+      </div>
       <button md-raised-button (click)="login()">
         Login
       </button>
@@ -10,17 +22,16 @@
       </button>
 
 
-        <a routerLink="pet-profile">
-          <button routerLink="pet-profile" class="btn btn-primary btn-lg">
+        <a href="/pet-profile">
+          <button class="btn btn-primary btn-lg">
             Tell us more about your pet
           </button>
         </a>
-
-      <button class="btn btn-primary btn-lg">
-        Do you want to become a host
-        <a routerLink="kennel-profile"></a>
-      </button>
-
+        <a href="/kennel-profile">
+          <button class="btn btn-primary btn-lg">
+            Do you want to become a host
+          </button>
+        </a>
 
     </div>
   </div>

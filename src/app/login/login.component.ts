@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AF } from "../providers/af";
+import { Router } from "@angular/router"
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
@@ -6,17 +8,15 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css', '../../assets/css/bootstrap.min.css', '../../assets/css/material-kit.css', '../../assets/css/demo.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent
+  {
   users: FirebaseListObservable<any[]>;
-  constructor(af: AngularFire){
-    this.users = af.database.list('/user');
-  }
-  private log: string ='test';
-  private logText(value: string): void {
-        this.log += `Text changed to '${value}'\n`
-    }
+  constructor(public afService: AF, private router: Router){}
 
-  ngOnInit() {
+  login() {
+    this.afService.loginWithGoogle().then((data) => {
+      // Send them to the homepage if they are logged in
+      this.router.navigate(['home']);
+    })
   }
-
 }
