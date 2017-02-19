@@ -1,61 +1,116 @@
 {
 	"user": [
 		{
+		"id": "1",
 		"username": "leila.kim356@gmail.com",
 		"password": "catowner123",
 		"firstName":"Leila",
 		"age":"19",
 		"city":"Los Angeles",
 		"state":"California",
-		"zipcode":"90001"
+		"zipcode":"90001",
+		"pic":"https://randomuser.me/api/portraits/women/83.jpg",
+		"pet_id": "1"
 	}, {
+		"id": "2",
 		"username": "doglover123@hotmail.com",
 		"password": "dogsarecool123",
 		"firstName":"John",
 		"age":"30",
 		"city":"San Francisco",
 		"state":"California",
-		"zipcode":"94110"
+		"zipcode":"94110",
+		"pic": "https://randomuser.me/api/portraits/men/83.jpg",
+		"pet_id": "2"
 	}, {
+		"id": "3",
 		"username": "petowner2017@gmail.com",
 		"password": "ilovecats12",
 		"firstName":"Pam",
 		"age":"33",
 		"city":"Los Angeles",
 		"state":"California",
-		"zipcode":"90001"
+		"zipcode":"90001",
+		"pic": "https://randomuser.me/api/portraits/women/83.jpg",
+		"pet_id": "3"
 	}, {
+		"id": "4",
 		"username": "ihaveabird40@aol.com",
 		"password": "parakeet101",
 		"firstName":"Bob",
 		"age":"40",
 		"city":"Los Angeles",
 		"state":"California",
-		"zipcode":"90001"
+		"zipcode":"90001",
+		"pic": "https://randomuser.me/api/portraits/men/94.jpg",
+		"pet_id": ""
 	}, {
+		"id": "5",
 		"username": "codedaypetowner50@gmail.com",
 		"password": "password123",
 		"firstName":"Jacqueline",
 		"age":"32",
 		"city":"Los Angeles",
 		"state":"California",
-		"zipcode":"90001"
+		"zipcode":"90001",
+		"pic": "https://randomuser.me/api/portraits/women/8.jpg",
+		"pet_id": ""
 	}
 ],
 	"pet": [
 		{
+			"id": "1",
 			"type": "Dog",
 			"name": "Bobby",
-			"description": "Needs to be given food at 2pm"
-		},
-		{	"type": "Cat",
-			"name" : "Tom",
-			"description": "She drops a lot of hair"
+			"description": "Needs to be given food at 2pm",
+			"rating": ""
 		},
 		{
+			"id": "2",
+			"type": "Cat",
+			"name" : "Tom",
+			"description": "She drops a lot of hair",
+			"rating": ""
+		},
+		{
+			"id": "3",
 			"type": "Dog",
 			"name": "Jeff",
-			"description": "Cannot be around other dogs, fights a lot"
+			"description": "Cannot be around other dogs, fights a lot",
+			"rating": ""
 		}
-	]
+	],
+	"place": [
+	{
+		"id": "1",
+		"adress" : "1600 Melrose Ave",
+		"availability": "true",
+		"city": "Los Angeles",
+		"state" : "California",
+		"zipcode" : "92003",
+		"price" : "10",
+		"user_id": "4"
+	},
+	{
+		"id": "2",
+		"adress" : "3000 Hollywood Blvd",
+		"availability": "true",
+		"city": "Los Angeles",
+		"state" : "California",
+		"zipcode" : "92005",
+		"price" : "20",
+		"user_id": "5"
+	},
+	{
+		"id": "3",
+		"adress" : "2305 Vine Street",
+		"availability": "true",
+		"city": "Los Angeles",
+		"state" : "California",
+		"zipcode" : "92085",
+		"price" : "15",
+		"user_id": "6"
+	}
+]
+
 }
